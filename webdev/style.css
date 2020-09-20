@@ -1,0 +1,486 @@
+html{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #4E4E4E;
+}
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+
+  .wrapper {
+      position: relative;
+      width: 1600px;
+      margin: 0 auto;
+  }
+
+  .inner{
+      width: 1060px;
+      margin: 0 auto;
+      position: relative;
+  }
+
+  .main-header {
+      position: absolute;
+      margin: 0 auto;
+      padding-top: 39px;
+      padding-bottom: 35px;
+  }
+  .header-inner {
+      position: relative;
+      left: 503px;
+  }
+
+  .header_logo {
+      position: absolute;
+      left: calc(50% - 25px);
+      top: -14px;
+  }
+
+  .header-nav ul {
+    width: 600px;
+    margin: 0 auto;
+    padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      list-style-type: none;
+
+  }
+
+  .header-nav li:nth-child(2n - 1){
+      margin-right: 85px;
+  }
+
+  .header-nav li:nth-child(2){
+    margin-right: 244px;
+}
+
+  
+  .header-nav a {
+    color: #FFFFFF;
+    opacity: 0.8;
+    text-decoration: none;
+  }
+
+  .header-nav a:hover { 
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .header-nav li {
+      position: relative;
+  }
+
+  .nav-active a{
+    opacity: 1;
+  }
+
+  .nav-active a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+  }
+
+.start-screen {
+    background-image: url("assets/bg-image-wrapper.jpg");
+
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 93px;
+    padding-bottom: 85px;
+}
+
+.start-screen h2 {
+    margin-left: 5px;
+    margin-top: 136px;
+    margin-bottom: 22px;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 4.5px;
+    text-transform: uppercase;
+}
+
+.description {
+    margin-top: 20px;
+    width: 504px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 16px 47px;
+    background-color: #00AFDB;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #009CC2;
+    cursor: pointer;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 170px;
+    margin: 183px auto 0 auto;
+    padding: 0;
+}
+
+.socials img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+/* RAPPRESENT */
+
+.article-inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+    margin-bottom: 140px;
+}
+
+.article_container{
+    margin-top: 150px;
+}
+
+.article_container h3{
+    width: 370px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #373737;
+}
+
+.article_container .button {
+    margin-top: 17px;
+}
+
+.article_description{
+    margin-bottom: 13px;
+    width: 407px;
+    font-size: 14px;
+    line-height: 145%;
+}
+
+/* COMMUNITY */
+
+.community {
+    background: #F5F6F7;
+    overflow: hidden;
+}
+
+.community_inner {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.community_article {
+    margin-right: 140px;
+    margin-top: 155px;
+    margin-bottom: 173px;
+    text-align: center;
+}
+
+.community_article h4 {
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px; 
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    color: #373737;
+    
+}
+
+.community_info {
+    width: 298px;
+    height: 80px;
+    line-height: 145%;
+    margin-top: 10px;
+    margin-left: -2px;
+}
+
+.gallery_pagination {
+    width: 110px;
+    height: 20px;
+    position: relative;
+    display: flex;
+    
+    margin-left: 534px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 140%;
+    color: #373737;
+}
+
+.pgn-button {
+    position: relative;
+    top: 8px;
+    padding: 0;
+    margin: 0 11px;
+    background-color: #F5F6F7;
+    width: 9px;
+    height: 9px;
+    border: none;
+    border-top: 2px solid #373737;
+    border-left: 2px solid #373737;
+    transform: rotate(-45deg);
+}
+
+.pgn-button_next {
+    transform: rotate(135deg);
+}
+
+.pgn-button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    /* border-top: 2px solid #8a8a8a;
+    border-left: 2px solid #8a8a8a; */
+}
+
+.pgn-button:focus {
+    outline: none;
+}
+
+.gallery_box {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.gallery_item {
+    margin-right: 30px;
+}
+
+
+/* IMPLEMENT */
+
+.implement  .article-inner {
+    justify-content: start;
+}
+
+.implement img {
+    margin-right: 139px;
+}
+
+.implement .article_container {
+    margin-top: 174px;
+}
+
+/* SIGN UP */
+
+.signup {
+    margin-top: 140px;
+    position: relative;
+    background-image: url("assets/pexels-christina-morillo-1181675\ 1.jpg");
+    text-align: center;
+    padding: 200px 0 220px 0;
+}
+
+.signup_form {
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.signup h3 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;      
+    color: #fff;
+}
+
+input[type=email] {
+    box-sizing: border-box;
+    width: 340px;
+    height: 46px;
+    color: #373737;
+    border: 0;
+    padding: 13px 24px 11px 24px;
+}
+
+.check_button {
+    position: relative;
+    margin-bottom: 0;
+    width: 66px;
+    height: 46px;
+    border: 0;
+    background-color: #00AFDB;
+   
+}
+
+.check_button:hover{
+    cursor: pointer;
+    background-color: #009CC2;
+
+}
+
+.check_button::before {
+    position: absolute;
+    left: calc(50% - 9px);
+    top: calc(50% - 7px);
+    content: "";
+    width: 18px;
+    height: 14px;
+    background-image: url("assets/fa-check.svg");
+    color: #ffffff;
+}
+
+
+/* Download the App */
+
+.app {
+    position: relative;
+    text-align: center;
+    padding: 120px 0 180px 0;
+    background-color:  #F5F6F7;
+}
+
+.app h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #373737
+}
+
+.app .article_description {
+    position: relative;
+    margin: 22px auto -1px;
+    width: 480px;
+}
+
+.btn_app {
+    box-sizing: border-box;
+    position: relative;
+    width: 186px;
+    height: 46px;
+    margin-left: 13px;
+    margin-right: 13px;
+    padding: 0;
+    padding-top: 16px;
+    text-align: left;
+    padding-left: 18px;
+}
+
+.btn_app::after {
+    content: "";
+    width: 59px;
+    height: 46px;
+    background-image: url("assets/icon-apple.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-color: #009CC2;
+}
+
+.btn_app_android::after {
+    background-image: url("assets/icon-android.svg");
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #000;
+    padding: 60px 160px 80px 160px;
+    position: relative;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer_links {
+    list-style-type: none;
+    display: flex;
+    justify-content: start;
+    padding: 0;
+}
+
+.footer_links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 41px;
+}
+
+.footer_links a :last-child{
+    margin-right: 0;
+}
+
+.footer_links li{
+    position: relative;
+}
+
+.footer_links li::after {
+    position: absolute;
+    right: 20px;
+    bottom: 6px;
+    content: "";
+    width: 1px;
+    height: 8px;
+    background-color: #4E4E4E;
+}
+
+.footer_links li:last-child::after {
+    content: none;
+}
+
+.author {
+    color: #818181;
+}
+
+.footer_logo {
+    position: absolute;
+    left: calc(50% - 22px);
+    top: 60px;
+}
+

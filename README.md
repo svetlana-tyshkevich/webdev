@@ -1,2 +1,2 @@
-# svetlana-tyshkevich-JS2020Q3
-Private repository for @svetlana-tyshkevich
+WebDev for RS School
+[Deploy](https://svetlana-tyshkevich.github.io/webdev/webdev/)
